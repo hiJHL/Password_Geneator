@@ -1,0 +1,17 @@
+{
+    "name": "Password Generator",
+    "version": "1.0",
+    "description": "Starting off!",
+    "permissions": ["activeTab","declarativeContent", "storage"],
+    "background": {
+      "scripts": ["gen_pw.js"],
+      "persistent": false
+    },
+    "browser_action": {
+        "name" : "pw_gen_page",
+        "default_popup": "extensionInterface.html"
+    },
+    
+    "manifest_version": 2
+  }
+  
