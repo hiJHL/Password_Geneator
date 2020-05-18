@@ -5,7 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<style>
+    body {
+        height: 260px;
+        width: 200px;
+    }
+    #title{
+        display: flex;
+        justify-content: center;
+    }
+    #result{
+        font-size: 20px;
+    }
     
+    
+</style>
+<body>
+    <h3 id="title">PW Gen</h3>
+    <h5 id="description">Check out any box for password generation</h5>
+
+
+    <div id="checkList">
+        <input type="checkbox" id="int"> Integer</br>
+        <input type="checkbox" id="alphabet" value="Alphabet"> Alphabet</br>
+        <input type="checkbox" id="special" value="Special"> Special Symbol</br>
+        <input type="text" id="length" value="16">
+        </br>
+        
+        <button id="submit">Submit</button>
+        </br>
+        </br>
+        </br>
+    </div>
+
+    <input type="textbox" value="PLACE_HOLDER" id="result" readonly>
+    <button id="copy">COPY</button>
+    <script src="./gen_pw.js"></script>
+    <script src="./pw.js"></script>
 </body>
 </html>
